@@ -13,7 +13,7 @@
         <!--View Finder 🧐-->
         <scene sceneID="Mzz-jl-eBL">
             <objects>
-                <tableViewController id="Sph-Cy-Qba" sceneMemberID="viewController">
+                <tableViewController id="Sph-Cy-Qba" customClass="PhotoTableViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bDT-3Z-3lh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,6 +63,9 @@
                                 <state key="normal" title="Save This Photo 😗✌🏼">
                                     <color key="titleColor" red="0.7707658678818653" green="0.57103118636616246" blue="0.7157619497777068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePhotoTapped:" destination="GtP-NC-8iI" eventType="touchUpInside" id="ITo-cP-fb3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q63-qv-S0O">
                                 <rect key="frame" x="248" y="562" width="88" height="43"/>
@@ -103,6 +106,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo 📷" id="2xi-3j-HKv"/>
                     <connections>
+                        <outlet property="captionText" destination="E4o-ei-Rme" id="hLp-K2-dxK"/>
                         <outlet property="imageView" destination="VEf-IS-Q26" id="Ajh-26-VRu"/>
                     </connections>
                 </viewController>
