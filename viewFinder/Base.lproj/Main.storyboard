@@ -51,51 +51,60 @@
         <!--Add New Photo 📷-->
         <scene sceneID="s05-Gs-Sjj">
             <objects>
-                <viewController id="GtP-NC-8iI" sceneMemberID="viewController">
+                <viewController id="GtP-NC-8iI" customClass="AddPhotoViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BsD-ok-FzW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="031319_kitten_770x400" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-RR-Kh7">
-                                <rect key="frame" x="32" y="142" width="351" height="198"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04y-BW-Nbb">
-                                <rect key="frame" x="27" y="415" width="360" height="66"/>
+                                <rect key="frame" x="27" y="464" width="360" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
                                 <state key="normal" title="Save This Photo 😗✌🏼">
-                                    <color key="titleColor" red="0.88512081710000001" green="0.95992386730000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiS-yf-2TP">
-                                <rect key="frame" x="64" y="580" width="80" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="22"/>
-                                <state key="normal" title="Camera">
-                                    <color key="titleColor" red="0.88512081710000001" green="0.95992386730000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.7707658678818653" green="0.57103118636616246" blue="0.7157619497777068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q63-qv-S0O">
-                                <rect key="frame" x="278" y="580" width="80" height="34"/>
+                                <rect key="frame" x="248" y="562" width="88" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
                                 <state key="normal" title="Albums">
-                                    <color key="titleColor" red="0.88512081710000001" green="0.95992386730000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.80385571720000004" green="0.63225924970000003" blue="0.75303214789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="albumsTapped:" destination="GtP-NC-8iI" eventType="touchUpInside" id="Fcu-xt-Ory"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4o-ei-Rme">
-                                <rect key="frame" x="32" y="377" width="351" height="30"/>
+                                <rect key="frame" x="36" y="433" width="351" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="VEf-IS-Q26">
+                                <rect key="frame" x="79" y="148" width="257" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiS-yf-2TP">
+                                <rect key="frame" x="79" y="560" width="88" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="0.80385571718215942" green="0.63225924968719482" blue="0.7530321478843689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="GtP-NC-8iI" eventType="touchUpInside" id="D3Q-Qf-RsZ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.83658516839999997" green="0.7003922896" blue="0.76049748070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97501596362389986" blue="0.98127295503425671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="K53-UQ-EiH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo 📷" id="2xi-3j-HKv"/>
+                    <connections>
+                        <outlet property="imageView" destination="VEf-IS-Q26" id="Ajh-26-VRu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mF8-47-wLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,6 +130,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="031319_kitten_770x400" width="770" height="400"/>
+        <image name="Image" width="225" height="225"/>
     </resources>
 </document>
