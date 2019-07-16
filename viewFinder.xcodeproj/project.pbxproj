@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A66C4C22DE432100D41B30 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A66C4B22DE432100D41B30 /* PhotoDetailViewController.swift */; };
 		18C2A6FA22DD0C9E00780619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2A6F922DD0C9E00780619 /* AppDelegate.swift */; };
 		18C2A6FF22DD0C9E00780619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C2A6FD22DD0C9E00780619 /* Main.storyboard */; };
 		18C2A70222DD0C9E00780619 /* viewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18C2A70022DD0C9E00780619 /* viewFinder.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18A66C4B22DE432100D41B30 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		18C2A6F622DD0C9E00780619 /* viewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C2A6F922DD0C9E00780619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C2A6FE22DD0C9E00780619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				18C2A6F922DD0C9E00780619 /* AppDelegate.swift */,
 				18C2A6FD22DD0C9E00780619 /* Main.storyboard */,
+				18A66C4B22DE432100D41B30 /* PhotoDetailViewController.swift */,
 				18C2A70322DD0C9F00780619 /* Assets.xcassets */,
 				18C2A70522DD0C9F00780619 /* LaunchScreen.storyboard */,
 				18C2A70822DD0C9F00780619 /* Info.plist */,
@@ -144,6 +147,7 @@
 				18C2A70222DD0C9E00780619 /* viewFinder.xcdatamodeld in Sources */,
 				18C2A70F22DD157700780619 /* AddPhotoViewController.swift in Sources */,
 				18C2A71122DD2D8900780619 /* PhotoTableViewController.swift in Sources */,
+				18A66C4C22DE432100D41B30 /* PhotoDetailViewController.swift in Sources */,
 				18C2A6FA22DD0C9E00780619 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = KWK.viewFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = "Amina-Syed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,7 +319,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = KWK.viewFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = "Amina-Syed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

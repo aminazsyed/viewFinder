@@ -4,12 +4,11 @@
 //
 //  Created by Apple on 7/15/19.
 //  Copyright © 2019 KWK2019SF. All rights reserved.
-//
 
 import UIKit
 
-class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
+class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+    //added UITextFieldDelegate
     var imagePicker = UIImagePickerController()
     
     @IBOutlet weak var imageView: UIImageView!
@@ -20,9 +19,15 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
         
         imagePicker.delegate = self
+        captionText.delegate = self
 
 }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func albumsTapped(_ sender: Any) {
         
         imagePicker.sourceType = .savedPhotosAlbum
