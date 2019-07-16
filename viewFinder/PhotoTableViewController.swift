@@ -34,17 +34,29 @@ class PhotoTableViewController: UITableViewController {
         }
     }
     
-    //WE LEFT OFF HEREEEEEEE GALLLL
-
+    override func viewWillAppear(_ animated: Bool) {
+        getPhotos()
+    }
+        
+        
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return photos.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "am is sleepy"
-        cell.imageView?.image = UIImage(named: "Image")
+        
+        let cellPhoto = photos[indexPath.row]
+        cell.textLabel?.text = cellPhoto.caption
+        
+        if let cellPhotoImageData = cellPhoto.imageData{
+            if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
+                cell.imageView?.image = cellPhotoImage 
+            }
+        }
+//        cell.textLabel?.text = "am is sleepy"
+//        cell.imageView?.image = UIImage(named: "Image")
 
         // Configure the cell...
 
